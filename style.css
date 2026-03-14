@@ -1,0 +1,123 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/36067563/pexels-photo-36067563.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(135deg, #6c757d00, #495057);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    
+}
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav .links a {
+    color: transparent;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+nav .link a:hover {
+    text-decoration: underline;
+}
+
+nav .buttons {
+    width: 150px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .buttons button {
+    margin: 0 5px;
+    width: 50%;
+    height: 4vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(4, 0, 254, 0.605);
+    transition: 0.2s linear;
+}
+
+nav .buttons button:hover {
+    color: rgba(4, 0, 254, 0.605);
+    background-color: rgba(0, 0, 0, 0.46);
+    border: 2px solid rgba(4, 0, 254, 0.605);
+    box-shadow: 0 0 5px rgba(4, 0, 254, 0.605)
+}
+
+section {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 40%;
+    text-align: center;
+    color:rgb(253, 253, 253);
+    font-weight: bold; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(6, 6, 6, 0.7);
+
+}
+
+.content h3 {
+    font-size: 2.5rem;
+}
+
+.content p {
+    width: 60%;
+    margin: 20px 20%;
+    color:white
+}
+
+.content button {
+    width: 35%;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgba(4, 0, 254, 0.605);
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.2s linear;
+}
+
+.content button:hover {
+    scale: 1.1;
+    font-size: 1.2rem;
+    background-color: transparent;
+    backdrop-filter: brightness(40%);
+    color: rgba(4, 0, 254, 0.605);
+    border: 1px solid rgba(4, 0, 254, 0.605);
+    box-shadow: 0 0 5px rgba(4, 0, 254, 0.605);
+}

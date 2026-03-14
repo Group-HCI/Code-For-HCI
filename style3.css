@@ -1,0 +1,67 @@
+body {
+  background: url('https://images.pexels.com/photos/36067563/pexels-photo-36067563.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  background: linear-gradient(135deg, #6c757d34, #495057); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+footer {
+  background: #ffffff; 
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.card {
+  height: 100%;
+}
+
+/* Add hover effect to testimonials */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  height: 200px; 
+  object-fit: cover; 
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center;
+  text-align: center;
+}
+
+.card-body .text-warning {
+  margin-top: auto; /* Push stars to the middle */
+  margin-bottom: 10px; /* Add spacing below stars */
+}
+    
+/* Align stars consistently */

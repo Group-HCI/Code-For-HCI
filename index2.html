@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Booking - Home</title>
+       <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <style>
+      .search-form {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+     .search-form .form-control {
+        margin-bottom: 15px;
+      }
+      .card {
+        height: 90%; /* Reduce height */
+        max-width: 90%; /* Limit width */
+        margin: auto; /* Center the cards */
+      }
+      .card-img-top {
+        height: 180px; /* Adjust image height */
+        object-fit: cover;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden; /* Ensure text stays within the card */
+        text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+        white-space: nowrap; /* Prevent text wrapping */
+      }
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ticket Booking</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index6.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index7.html">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero text-center py-5 bg-light">
+      <h1>Book Your Bus Tickets Easily!</h1>
+      <p>Secure, and Comfortable Travel</p>
+      <a href="signup.html" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+
+    <div class="image-overlay-container" style="position: relative; text-align: center;  color: white;">
+        <img
+          src="https://images.pexels.com/photos/36067563/pexels-photo-36067563.jpeg"
+          alt="Bus Booking"
+          class="img-fluid rounded"
+          style="width: 100%; height: auto; margin-top: 60px"
+        />
+        <div class="overlay-text" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); text-align: center;">
+            <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(6, 6, 6, 0.7);">
+              Travel without Limits
+            </h1>
+            <hr style="width: 100%; border: 0.5px solid black; margin: 10px auto;" />
+            <p style="font-size: 1.5rem; font-weight: 300; text-shadow: 1px 1px 3px black;">
+              Discover comfort and convenience here in IBT Zamboanga City.
+            </p>
+        </div>
+        </div>
+
+    <!-- Search Form -->
+    <div class="container my-5">
+      <div class="search-form p-4 shadow">
+        <h2 class="text-center mb-4">Search for Buses</h2>
+        <form action="index3.html" method="get">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="from" class="form-label">From</label>
+              <input
+                type="text"
+                id="from"
+                class="form-control"
+                placeholder="Enter starting location"
+                name="from"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="to" class="form-label">To</label>
+              <input
+                type="text"
+                id="to"
+                class="form-control"
+                placeholder="Enter destination"
+                name="to"
+              />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label for="date" class="form-label">Date of Travel</label>
+              <input type="date" id="date" class="form-control" name="date" />
+            </div>
+            <div class="col-md-6">
+              <label for="passengers" class="form-label"
+                >Number of Passengers</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="passengers"
+                name="passengers"
+                placeholder="Enter number of passengers"
+                min="1"
+                required
+              />
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success btn-lg">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
